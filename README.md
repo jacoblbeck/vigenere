@@ -6,7 +6,7 @@ INTRODUCTION
 
 This is the source archive for the Vigenere Implementation Lab for CS 4821 at the University of Minnesota Duluth.
 
-The lab manual for this exercise is at: https://docs.google.com/a/d.umn.edu/document/d/1vM0BdZSgqI5\_1JkFszOEGksjYVE9ijypHOTLKtBVpXo/edit?usp=sharing
+The lab manual for this exercise is at: https://docs.google.com/a/d.umn.edu/document/d/1vM0BdZSgqI5_1JkFszOEGksjYVE9ijypHOTLKtBVpXo/edit?usp=sharing
 
 This archive contains sample input, keys, output and a testing script
 to perform encoding/decoding for each input and key combination.

@@ -9,14 +9,14 @@ to perform encoding/decoding for each input and key combination.
 
 Contents:
 
-`input/` -- sample inputs 
-`keys/` -- sample keys 
-`correct/` -- correctly encoded inputs by key 
-`ENCODED/` -- output directory for test encodings 
-`DECODED/` -- output directory for test decodings 
-`checksums/` -- files for integrity testing 
-`log/` -- output from encoder/decoder 
-`test.sh` -- runs tests 
+`input/` -- sample inputs  
+`keys/` -- sample keys  
+`correct/` -- correctly encoded inputs by key  
+`ENCODED/` -- output directory for test encodings  
+`DECODED/` -- output directory for test decodings  
+`checksums/` -- files for integrity testing  
+`log/` -- output from encoder/decoder  
+`test.sh` -- runs tests  
 
 INSTRUCTIONS
 ------------

@@ -116,7 +116,8 @@ fi
 echo "Removing stale test data (if it exists)..."
 rm $ENC/*
 rm $DEC/*
-rm log/*
+rm -r log
+mkdir log
 
 BANNED="strcpy strcat strtok sprintf vsprintf gets strlen"
 

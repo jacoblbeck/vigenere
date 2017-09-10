@@ -3,3 +3,4 @@
 *.swp
 encoder
 decoder
+log/*

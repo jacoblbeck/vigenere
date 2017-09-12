@@ -117,7 +117,10 @@ echo "Removing stale test data (if it exists)..."
 rm $ENC/*
 rm $DEC/*
 rm -r log
+echo "Creating folders..."
 mkdir log
+mkdir $ENC
+mkdir $DEC
 
 BANNED="strcpy strcat strtok sprintf vsprintf gets strlen"
 

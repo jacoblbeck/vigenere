@@ -4,3 +4,5 @@
 encoder
 decoder
 log/*
+DECODED/*
+ENCODED/*

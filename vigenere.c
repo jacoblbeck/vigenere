@@ -13,45 +13,34 @@
 void encode(char *argv[],char data[],int keyLength);
 void decode(char *argv[],char data[],int keyLength);
 
-
 int main(int argc, char *argv[]) {
 
 char *filepath = argv[1];
 unsigned char buffer[5000];
 char data[128]; 
-int bytes= 0; 
-char symbol;
 FILE *INPUT;
 
 if ((INPUT = fopen(filepath, "rb")) == NULL ) {
      printf("Problem opening key file '%s'; errno: %d/n", filepath, errno);
      exit(1);
 }
+
 fseek(INPUT,0L, SEEK_END);
 int size = ftell(INPUT);
 rewind(INPUT);
 
 fread(buffer,1,size,INPUT);
-if( size > 128) {
-for(int i = 0; i < 128; i++){
-data[i] = (char)buffer[i];
-}
-size = 128; 
+if(size > 128) {
+	for(int i = 0; i < 128; i++){
+		data[i] = (char)buffer[i];
+	}
+   size = 128; 
 }
 else {
-for(int i = 0; i < size; i++){
-data[i] = (char)buffer[i];
+	for(int i = 0; i < size; i++){
+		data[i] = (char)buffer[i];
+	}
 }
-}
-for(int i = 0; i < size; i++){
-printf("%c", data[i]);
-}
-
-/*
-while(bytes < (128) && (symbol = fgetc(INPUT)) != EOF) {
-     data[bytes] =  symbol;
-     bytes++;
-}*/
 
 fclose(INPUT);
 
@@ -71,8 +60,6 @@ void encode(char *argv[],char data[],int keyLength) {
 
 char *filepath = argv[2];
 char *output = argv[3]; 
-unsigned int length = 0;
-char symbol;
 
 
 //open input file
@@ -118,8 +105,6 @@ void decode(char *argv[], char data[],int keyLength) {
 
 char *filepath = argv[2];
 char *output = argv[3]; 
-unsigned int length = 0;
-char symbol;
 
 //open input file
 FILE *INPUT;

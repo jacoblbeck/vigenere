@@ -86,7 +86,7 @@ unsigned char efile[10000];
 int bytes; 
 while((bytes = fread(&efile,1,1,INPUT)) > 0){
   for( int i = 0; i < bytes; i++){
-   cipher = (char) (((char) efile[i] + *keyindex) % 256);
+  cipher = (char) (((char) efile[i] + *keyindex) % 256);
    fprintf(OUTPUT, "%c", cipher);
    keyindex++;
    ptrcount++;
